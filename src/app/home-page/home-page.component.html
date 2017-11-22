@@ -1,14 +1,10 @@
-
-
+<div class="quiz-area" ng-show="inProgress">
 </div>
-<h3 align ="center">Please click on the below links to view the table details</h3>
-<nav align="center">
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/employees" routerLinkActive="active">Employees List</a>
-  <a routerLink="/departments" routerLinkActive="active">Department List</a>
-  <a routerLink="/products" routerLinkActive="active">Product List</a>
-</nav>
-
-<div>
-  <router-outlet></router-outlet>
+ 
+<div class="intro" ng-show="!inProgress">
+	<p>Welcome to the QuizApp</p>
+  
+  <!--<button  style=" border-radius: 1em;  animation:both; background-color:forestgreen;"
+     type="button" class="start" padding=1px color="green"><a routerLink="/Service/start">
+      Start Quiz</a></button>-->
 </div>

@@ -1,17 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1 style="background-color: lightblue" align="center">Quiz App</h1>
-<div style="text-align:center">
-  <h1>
-    Quiz Application
-  </h1>
-  <img width="200" src="../home-page/index.jpg">
-</div>
-<h2 align="left">Quiz Instructions</h2>
-</div>
-<h3 align ="center">Please click on the below links to view the table details</h3>
-<nav align="center">
-  <a routerLink="/home" routerLinkActive="active">Start Quiz</a>
-<div>
-  <router-outlet></router-outlet>
-</div>
+<div style="background-color:darkcyan">
+    <h1 style="background-color:rgb(107, 235, 235)" style="text-align:center" >
+     Quiz App</h1>
+    </div>
+    <img align="left" style="width:50px" src="./accenture.png">
+    <img align="left" style="width: 700px ; height:500px;" src="./quiz.png">
+  
+  <br><br><br><br>
+  <div style="border:2px solid cadetblue; height:400px ; padding:2em">
+  <h2 align="left">Quiz Information</h2>
+  <p padding="right" align="left">
+      1) Click on the start button to take the test <br>
+      2) Choose appropriate correct radio button for correct answer out of the 4 options <br> 
+      3) Test will be of 30 mins with 10 questions <br><br><br>
+  </div>
+  <button id="startQuiz" ng-click="start()">Start Test</button>
 
+  <router-outlet></router-outlet>
+  

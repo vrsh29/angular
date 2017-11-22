@@ -1,22 +1,23 @@
+import { QuizService } from './quiz.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { QuizAppComponent } from './quiz-app/quiz-app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { QuizPageComponent } from './quiz-page/quiz-page.component';
+import { QuestionsPageComponent } from './questions-page/questions-page.component';
+import { ResultsPageComponent } from './results-page/results-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuizAppComponent,
     HomePageComponent,
-    QuizPageComponent
+    QuestionsPageComponent,
+    ResultsPageComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [QuizService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
